@@ -1,0 +1,20 @@
+{
+  "author": "Knut Ahlers <knut@ahlers.me> (http://blog.knut.me/)",
+  "name": "lightsonoff",
+  "description": "Simply turn of network based lights after last client parted network",
+  "version": "0.0.1",
+  "repository": {
+    "url": ""
+  },
+  "main": "index.coffee",
+  "dependencies": {
+    "tail": "~0.3.1",
+    "coffee-script": "~1.6.1",
+    "request": "~2.22.0"
+  },
+  "devDependencies": {},
+  "optionalDependencies": {},
+  "engines": {
+    "node": ">= 0.8.0"
+  }
+}

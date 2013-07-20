@@ -1,0 +1,14 @@
+{
+  "watchfile": "/var/log/syslog",
+  "presence_watched": [
+    "00:00:00:00:00:00"
+  ],
+  "timeout": 300,
+  "ezcontrol": {
+    "hostname": "xs1",
+    "offstates": {
+      "1": "2",
+      "2": "2"
+    }
+  }
+}
