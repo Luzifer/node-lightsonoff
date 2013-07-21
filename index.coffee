@@ -2,6 +2,7 @@
 
 settings = require './settings'
 mactable = {}
+switchedoff = false
 
 Tail = require('tail').Tail
 request = require 'request'
@@ -28,8 +29,10 @@ delay 60 * 1000, ->
     for mac in settings.presence_watched
       if mactable[mac] != undefined and time - mactable[mac] < settings.timeout
         lightson = true
+        switchedoff = false
 
-    if lightson == false
+    if lightson == false and switchedoff == false
+      switchedoff = true
       for actuator, state of settings.ezcontrol.offstates
         switchActuator actuator, state
 
